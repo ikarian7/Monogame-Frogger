@@ -61,6 +61,18 @@
 /processorParam:TextureFormat=Color
 /build:spr_frog.png
 
+#begin spr_gameover_screen.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:spr_gameover_screen.png
+
 #begin spr_racecar.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -73,6 +85,18 @@
 /processorParam:TextureFormat=Color
 /build:spr_racecar.png
 
+#begin spr_start_screen.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:spr_start_screen.png
+
 #begin spr_truck.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -84,4 +108,16 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:spr_truck.png
+
+#begin spr_win_screen.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:spr_win_screen.png
 
