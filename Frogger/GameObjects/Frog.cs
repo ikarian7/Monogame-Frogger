@@ -52,6 +52,9 @@ namespace Frogger
             if (rightPressed && !lastFrameRightPressed) position.X += posPlus;
             if (upPressed && !lastFrameUpPressed) position.Y -= posPlus;
 
+            position.X = MathHelper.Clamp(position.X, 0, GameEnvironment.Screen.X - texture.Width);
+            position.Y = MathHelper.Clamp(position.Y, 0, GameEnvironment.Screen.Y - texture.Height);
+
         }
     }
 }
