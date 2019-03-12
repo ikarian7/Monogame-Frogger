@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,9 +9,9 @@ using System.Threading.Tasks;
 
 class GameObject
 {
+    public Texture2D texture;
     public Vector2 position;
     public Vector2 velocity;
-    public Texture2D texture;
 
     public GameObject(String assetName)
     {
@@ -18,7 +19,9 @@ class GameObject
         Init();
     }
 
-    public virtual void Update() { }
+    public virtual void Update()
+    {
+    }
 
     public virtual void Draw(SpriteBatch spriteBatch)
     {
