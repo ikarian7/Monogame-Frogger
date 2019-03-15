@@ -14,7 +14,9 @@ namespace Frogger
     {
         public Car(String assetName, Vector2 position, Vector2 velocity) : base(assetName)
         {
-            
+            this.position = position;
+            this.velocity = velocity;
+
 
         }
 
@@ -27,7 +29,13 @@ namespace Frogger
         public override void Update()
         {
             base.Update();
-            position.X =+ velocity.X;
+            position.X += velocity.X;
+            if (position.X > GameEnvironment.Screen.X && velocity.X > 0){
+                position.X = -10 - texture.Width;
+            }
+            else if (position.X + texture.Width < 0 && velocity.X < 0) {
+                position.X = 10 + GameEnvironment.Screen.X;
+            }
 
         }
     }
