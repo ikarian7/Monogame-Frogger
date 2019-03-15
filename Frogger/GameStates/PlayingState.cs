@@ -27,5 +27,23 @@ namespace Frogger
             gameObjectList.Add(new Car("spr_racecar", new Vector2(370, 145), new Vector2(-2, 0)));
 
         }
+        public override void Update(GameTime gameTime)
+        {
+            base.Update(gameTime);
+            foreach (GameObject car in gameObjectList)
+            {
+                foreach (GameObject frog in gameObjectList)
+                {
+                    if (frog is Frog && car is Car)
+                    {
+                        if (frog.Overlaps(car))
+                        {
+                            frog.Init();
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }
